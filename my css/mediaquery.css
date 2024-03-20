@@ -5,24 +5,20 @@
         padding-right: 3% !important;
         padding-top: 2% !important;
     }
-    .links{
-        display: none !important;
-    }
+    
     .btn{
         display: none !important;
     }
     .menu{
-        position: relative !important;
+        display: block !important;
     }
-    .menu-icon, exit-icon{
-        cursor: pointer !important;
+    .exit-icon{
+        display: block !important;
     }
-    .links{
+    .linkns{
         display: none !important;
     }
-    .links.visible{
-        display:  !important;
-    }
+ 
     .fullscreen{
         position: fixed !important;
         top: 0 !important;

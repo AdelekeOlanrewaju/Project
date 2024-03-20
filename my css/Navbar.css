@@ -16,11 +16,11 @@
     width: 100%;
     background-color: white;
 }
-.links{
+.linkns{
     display: flex;
     gap: 10%;
 }
-.links > select{
+.linkns > select{
     border: none;
     outline: none;
     text-transform: capitalize;
@@ -30,7 +30,7 @@
     line-height: 18px;
     letter-spacing: 0em;
 }
-.links >select:hover{
+.linkns >select:hover{
     opacity: 50%;
 }
 .btn > button{
@@ -48,23 +48,66 @@
 .btn > button:hover{
     opacity: 50%;
 }
-.menu{
-    display: none;
-}
-.lnkz{
-    display: flex;
-    gap: 10%;
-}
-.lnkz > select{
-    border: none;
-    outline: none;
-    text-transform: capitalize;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0em;
-}
-.lnkz >select:hover{
-    opacity: 50%;
-}
+
+
+ .menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   z-index: 999;
+   display: none;
+ }
+ 
+ .icon {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+ 
+ .exit-icon {
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+ }
+ 
+ .links {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.8);
+   z-index: 1000;
+   padding-top: 12%;
+   padding-left: 5%;
+   padding-right: 5%;
+   box-sizing: border-box;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   transform: translateY(-100%);
+   opacity: 0;
+ }
+ 
+ .links.show {
+   transform: translateY(0);
+   opacity: 1;
+ }
+ 
+ .links > select {
+   margin-bottom: 10px;
+   border: none;
+ }
+ 
+ .icon {
+   transition: all 0.3s ease;
+ }

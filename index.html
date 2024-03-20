@@ -30,7 +30,7 @@
         <div class="logo">
             <img src="./images/image 4.svg" alt="">
         </div>
-            <div class="links">
+            <div class="linkns">
                 <select name="" id="">
                     <option value="">audit</option>
                 </select>
@@ -50,32 +50,27 @@
                 <div class="btn">
                     <button>Book a Demo</button>
                 </div>
-       <div class="menu">
-        <img src="./images/menu.png" alt="menu-icon" class="menu-icon">
-        <div class="links hidden">
-            <div class="lnkz">
-                <select name="" id="">
-                    <option value="">audit</option>
-                </select>
-                <select name="" id="">
-                    <option value="">manage</option>
-                </select>
-                <select name="" id="">
-                    <option value="">secure</option>
-                </select>
-                <select name="" id="">
-                    <option value="">automate</option>
-                </select>
-                <select name="" id="">
-                    <option value="">about</option>
-                </select>
-            </div>
-                <div class="btn">
-                    <button>Book a Demo</button>
-                </div>
-        </div>
-        <img src="./images/exit.png" class="exit-icon hidden" alt="">
-       </div>
+                <div class="menu" id="menu">
+                    <img src="./images/menu.png" class="icon" id="menuIcon" onclick="toggleMenu()" alt="Menu" />
+                    <nav class="links" id="menuLinks">
+                      <select name="" id="auditSelect">
+                        <option value="">audit</option>
+                      </select>
+                      <select name="" id="manageSelect">
+                        <option value="">manage</option>
+                      </select>
+                      <select name="" id="secureSelect">
+                        <option value="">secure</option>
+                      </select>
+                      <select name="" id="automateSelect">
+                        <option value="">automate</option>
+                      </select>
+                      <select name="" id="aboutSelect">
+                        <option value="">about</option>
+                      </select>
+                      <img src="./images/exit.png" class="exit-icon" id="exitIcon" onclick="hideMenu()" alt="Exit">
+                    </nav>
+                  </div>
     </nav>
 
        <!-- Herosection -->
